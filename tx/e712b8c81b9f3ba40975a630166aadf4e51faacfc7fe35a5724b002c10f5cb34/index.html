@@ -1,8 +1,98 @@
 <!doctype html>
-<meta charset="utf-8">
-<h1>Transaction e712b8c81b9f3ba40975a630166aadf4e51faacfc7fe35a5724b002c10f5cb34</h1>
-<p>Outputs:</p>
-<ul>
-  <li>100.00000000 BTC → bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</li>
-</ul>
-<p>Confirmations: 1</p>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tx Viewer – SIMULATION</title>
+<style>
+  :root{--bg:#0f1220;--card:#171a2b;--muted:#8b93a7;--ok:#3ad29f;--warn:#f6c343;--bad:#ff6b6b;--txt:#e7ecff;--mono:"SFMono-Regular",Consolas,monospace}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto}
+  .wrap{max-width:1100px;margin:24px auto;padding:0 16px}
+  .banner{background:linear-gradient(90deg,#7c3aed,#06b6d4);padding:10px 14px;border-radius:12px;margin-bottom:16px}
+  .banner b{letter-spacing:.4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{background:var(--card);border:1px solid #232742;border-radius:14px;padding:14px 16px}
+  h1{font-size:20px;margin:0 0 10px} h2{font-size:14px;margin:0 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+  .mono{font-family:var(--mono);font-size:13px}
+  .kv{display:grid;grid-template-columns:160px 1fr;gap:6px 10px;margin-top:6px}
+  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px}
+  .ok{background:#143c33;color:var(--ok);border:1px solid #1d5b4d}
+  .warn{background:#3a3314;color:var(--warn);border:1px solid #5a4e1d}
+  .bad{background:#402023;color:var(--bad);border:1px solid #5d2f34}
+  table{width:100%;border-collapse:collapse;margin-top:8px}
+  th,td{padding:10px;border-bottom:1px solid #242941;text-align:left}
+  th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+  .right{text-align:right}
+  .addr{font-family:var(--mono);word-break:break-all}
+  .footer{color:var(--muted);margin:18px 0 8px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="banner">
+    <b>SIMULATION / DEMO</b> — This page is a mocked transaction view for educational purposes only. Not a real blockchain record.
+  </div>
+
+  <h1>Transaction <span class="mono">FAKE-TXID-1234567890abcdef...deadbeef</span></h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <div class="kv mono">
+        <div>Status</div> <div><span class="pill ok">Confirmed (1)</span></div>
+        <div>Block</div>  <div>840000 · 2025-09-14 15:22:31 UTC</div>
+        <div>Size / Weight</div> <div>225 vB / 562 wu</div>
+        <div>Fee</div> <div>0.00001000 tBTC (44.4 sat/vB)</div>
+        <div>Total Input</div> <div>150.00000000 tBTC</div>
+        <div>Total Output</div> <div>149.99999000 tBTC</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Payment Summary</h2>
+      <div class="kv mono">
+        <div>Network</div> <div>Testnet — SIMULATED</div>
+        <div>Purpose</div> <div>Demo layout (not on-chain)</div>
+        <div>Notes</div> <div>Structure similar to common explorers</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h2>Inputs (vin)</h2>
+    <table class="mono">
+      <thead><tr><th>Prev out</th><th>Index</th><th class="right">Value</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="addr">tb1qexamplefromaddressxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+          <td>0</td>
+          <td class="right">150.00000000 tBTC</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h2>Outputs (vout)</h2>
+    <table class="mono">
+      <thead><tr><th>#</th><th>Script / Address</th><th class="right">Value</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td class="addr">tb1qrecipientaddressxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+          <td class="right">100.00000000 tBTC</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="addr">tb1qchangeaddressxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+          <td class="right">49.99999000 tBTC</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">© Demo page for learning UI structure. Not a payment proof.</div>
+</div>
+</body>
+</html>
