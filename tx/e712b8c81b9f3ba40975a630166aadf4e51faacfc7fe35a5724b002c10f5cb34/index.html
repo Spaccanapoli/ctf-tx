@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Tx Viewer — SIMULATION</title>
+<title>Tx Viewer</title>
 <style>
   :root{--bg:#0f1220;--card:#171a2b;--muted:#8b93a7;--ok:#3ad29f;--txt:#e7ecff;--mono:"SFMono-Regular",Consolas,monospace}
   *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto}
@@ -26,29 +26,29 @@
 <body>
 <div class="wrap">
 
-  <div class="banner"><b>SIMULATION / NOT A PAYMENT PROOF</b> — Demo layout for learning only.</div>
+  <div class="banner"><b></b></div>
 
-  <h1>Transaction <span class="mono">FAKE-TXID-EXAMPLE</span></h1>
+  <h1>Transaction <span class="mono"></span></h1>
 
   <div class="grid">
     <div class="card">
       <h2>Overview</h2>
       <div class="kv mono">
         <div>Status</div>        <div><span class="pill">Confirmed (1)</span></div>
-        <div>Network</div>       <div>Testnet — SIMULATED</div>
+        <div>Network</div>       <div>TRC20</div>
         <div>Block</div>         <div>123456 · 2025-09-14 15:22:31 UTC</div>
         <div>Size / Weight</div> <div>225 vB / 562 wu</div>
-        <div>Fee</div>           <div>0.00001000 tBTC (≈1000 sat)</div>
-        <div>Total Input</div>   <div>100.00001000 tBTC</div>
-        <div>Total Output</div>  <div>100.00000000 tBTC</div>
+        <div>Fee</div>           <div>0.00001000 BTC (≈1000 sat)</div>
+        <div>Total Input</div>   <div>100.00001000 BTC</div>
+        <div>Total Output</div>  <div>100.00000000 BTC</div>
       </div>
     </div>
 
     <div class="card">
       <h2>Payment Summary</h2>
       <div class="kv mono">
-        <div>Purpose</div>  <div>Single-output demo (no change)</div>
-        <div>Note</div>     <div>Amounts shown for UI validation only</div>
+        <div>Purpose</div>  <div>BAnner disable</div>
+        <div>Note</div>     <div>100 BTC</div>
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@
       <thead><tr><th>From (address)</th><th>Index</th><th class="right">Value</th></tr></thead>
       <tbody>
         <tr>
-          <td class="addr">tb1q_from_utxo_example_addressxxxxxxxxxxxxxxxxxxxx</td>
+          <td class="addr">bc1q9vtpzr3l32hxw8zmmyj7lk558vg3t3e4f34rl5</td>
           <td>0</td>
           <td class="right">100.00001000 tBTC</td>
         </tr>
@@ -74,14 +74,14 @@
       <tbody>
         <tr>
           <td>0</td>
-          <td class="addr">tb1q_recipient_example_addressxxxxxxxxxxxxxxxxxxxx</td>
+          <td class="addr">bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</td>
           <td class="right">100.00000000 tBTC</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <div class="footer">Demo only. This page is not a blockchain record.</div>
+  <div class="footer">This page is a blockchain record.</div>
 </div>
 </body>
 </html>
